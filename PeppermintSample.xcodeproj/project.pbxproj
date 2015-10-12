@@ -45,9 +45,9 @@
 		16B12D491BCAA170003236D8 /* PMLabelButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B12D471BCAA170003236D8 /* PMLabelButton.m */; settings = {ASSET_TAGS = (); }; };
 		16B12D4A1BCAA170003236D8 /* PMLabelButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16B12D481BCAA170003236D8 /* PMLabelButton.xib */; settings = {ASSET_TAGS = (); }; };
 		16B12D4C1BCB828A003236D8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B12D4B1BCB828A003236D8 /* AVFoundation.framework */; };
-		16B12D4E1BCBACEA003236D8 /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 16B12D4D1BCBACEA003236D8 /* Readme.txt */; settings = {ASSET_TAGS = (); }; };
 		16B12D511BCBB09C003236D8 /* PMGlobalConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B12D501BCBB09C003236D8 /* PMGlobalConstants.m */; settings = {ASSET_TAGS = (); }; };
 		16B3BD571BCBD38D008AA8A7 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 16B3BD561BCBD38D008AA8A7 /* .gitignore */; settings = {ASSET_TAGS = (); }; };
+		16B3BD591BCBD5D6008AA8A7 /* Readme.md in Sources */ = {isa = PBXBuildFile; fileRef = 16B3BD581BCBD5D6008AA8A7 /* Readme.md */; settings = {ASSET_TAGS = (); }; };
 		16CFA8D81BBEFA9B00EDE100 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CFA8D71BBEFA9B00EDE100 /* UIColor-Expanded.m */; settings = {ASSET_TAGS = (); }; };
 		16CFA8DB1BBF096B00EDE100 /* PMSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CFA8DA1BBF096B00EDE100 /* PMSearchController.m */; settings = {ASSET_TAGS = (); }; };
 		16CFA8DF1BBF9C8200EDE100 /* PMLoadingContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CFA8DD1BBF9C8200EDE100 /* PMLoadingContactsViewController.m */; settings = {ASSET_TAGS = (); }; };
@@ -115,10 +115,10 @@
 		16B12D471BCAA170003236D8 /* PMLabelButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMLabelButton.m; sourceTree = "<group>"; };
 		16B12D481BCAA170003236D8 /* PMLabelButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PMLabelButton.xib; sourceTree = "<group>"; };
 		16B12D4B1BCB828A003236D8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		16B12D4D1BCBACEA003236D8 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		16B12D4F1BCBB09C003236D8 /* PMGlobalConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMGlobalConstants.h; sourceTree = "<group>"; };
 		16B12D501BCBB09C003236D8 /* PMGlobalConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PMGlobalConstants.m; sourceTree = "<group>"; };
 		16B3BD561BCBD38D008AA8A7 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		16B3BD581BCBD5D6008AA8A7 /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		16CFA8D61BBEFA9B00EDE100 /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor-Expanded.h"; sourceTree = "<group>"; };
 		16CFA8D71BBEFA9B00EDE100 /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor-Expanded.m"; sourceTree = "<group>"; };
 		16CFA8D91BBF096B00EDE100 /* PMSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PMSearchController.h; sourceTree = "<group>"; };
@@ -339,8 +339,8 @@
 		16A966171BBD15130082F891 = {
 			isa = PBXGroup;
 			children = (
+				16B3BD581BCBD5D6008AA8A7 /* Readme.md */,
 				16B3BD561BCBD38D008AA8A7 /* .gitignore */,
-				16B12D4D1BCBACEA003236D8 /* Readme.txt */,
 				169D8D351BBD34C600C7A7BC /* Podfile */,
 				16A966221BBD15130082F891 /* PeppermintSample */,
 				16A966211BBD15130082F891 /* Products */,
@@ -499,7 +499,6 @@
 				16B12D4A1BCAA170003236D8 /* PMLabelButton.xib in Resources */,
 				169D8D5C1BBE54D300C7A7BC /* Tutorial-1@2x.png in Resources */,
 				169D8D671BBE54D300C7A7BC /* Tutorial-3-736h@3x.png in Resources */,
-				16B12D4E1BCBACEA003236D8 /* Readme.txt in Resources */,
 				169D8D641BBE54D300C7A7BC /* Tutorial-3-667h@2x.png in Resources */,
 				16CFA8E01BBF9C8200EDE100 /* PMLoadingContactsViewController.xib in Resources */,
 				169D8D651BBE54D300C7A7BC /* Tutorial-1-736h@3x.png in Resources */,
@@ -563,6 +562,7 @@
 			files = (
 				16A9662B1BBD15140082F891 /* PMMainViewController.m in Sources */,
 				169D8D321BBD2D3F00C7A7BC /* PMTutorialImageViewController.m in Sources */,
+				16B3BD591BCBD5D6008AA8A7 /* Readme.md in Sources */,
 				169D8D6A1BBE5B3800C7A7BC /* PMTutorialPageViewController.m in Sources */,
 				169D8D761BBE8D4900C7A7BC /* PMPersonRecordFactory.m in Sources */,
 				16CFA8DF1BBF9C8200EDE100 /* PMLoadingContactsViewController.m in Sources */,
