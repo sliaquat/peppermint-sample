@@ -1,0 +1,49 @@
+
+
+#ifdef __OBJC__
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
+
+#define kTutorialPageChangedNotification @"TutorialPageChangedNotification"
+#define kTutorialDismissedNotification @"TutorialDismissedNotification"
+
+#define IS_IPHONE ([[[UIDevice currentDevice]model] isEqualToString:@"iPhone"] || [[[UIDevice currentDevice]model] isEqualToString:@"iPhone Simulator"])
+#define IS_IPOD   ([[[UIDevice currentDevice]model] isEqualToString:@"iPod touch"])
+
+#define IS_IPAD   ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+
+#define IS_IPAD_1X (IS_IPAD && MAX([[UIScreen mainScreen] bounds].size.height, [[UIScreen mainScreen] bounds].size.width) == 1024 && [[UIScreen mainScreen] scale] == 1.00)
+
+#define IS_IPAD_2X (IS_IPAD && MAX([[UIScreen mainScreen] bounds].size.height, [[UIScreen mainScreen] bounds].size.width) == 1024 && [[UIScreen mainScreen] scale] == 2.00)
+
+//iPhone 6 plus points/bounds: 414x736 resolution @3x: 1242 x 2208
+#define IS_IPHONE_6_PLUS (IS_IPHONE && MAX([[UIScreen mainScreen] bounds].size.height, [[UIScreen mainScreen] bounds].size.width) == 736)
+
+//iPhone 6 points/bounds: 375x667 resolution @2x: 750 x 1334
+#define IS_IPHONE_6 (IS_IPHONE && MAX([[UIScreen mainScreen] bounds].size.height, [[UIScreen mainScreen] bounds].size.width) == 667)
+
+//iPhone 5 points/bounds: 320x568 resolution @2x: 640 x 1136
+#define IS_IPHONE_5 (IS_IPHONE && MAX([[UIScreen mainScreen] bounds].size.height, [[UIScreen mainScreen] bounds].size.width) == 568)
+
+//iPhone 5 points/bounds: 320x480 resolution @2x: 640 x 960
+#define IS_IPHONE_4 (IS_IPHONE &&  MAX([[UIScreen mainScreen] bounds].size.height, [[UIScreen mainScreen] bounds].size.width) == 480)
+
+#define IS_IPOD_5 (IS_IPOD && MAX([[UIScreen mainScreen] bounds].size.height, [[UIScreen mainScreen] bounds].size.width) == 568)
+
+#define IS_IPOD_4 (IS_IPOD && MAX([[UIScreen mainScreen] bounds].size.height, [[UIScreen mainScreen] bounds].size.width) == 480)
+
+#endif
+// Disables log messages when debugging is turned off
+#ifndef NDEBUG
+
+#define DebugLog(message, ...) NSLog(@"%s: " message, __PRETTY_FUNCTION__, ##__VA_ARGS__)
+
+#else
+
+#define DebugLog(message, ...)
+
+#endif

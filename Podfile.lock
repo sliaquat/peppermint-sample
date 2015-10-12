@@ -1,0 +1,16 @@
+PODS:
+  - FLKAutoLayout (0.2.1)
+  - FXPageControl (1.4)
+  - MBProgressHUD (0.9.1)
+
+DEPENDENCIES:
+  - FLKAutoLayout
+  - FXPageControl
+  - MBProgressHUD
+
+SPEC CHECKSUMS:
+  FLKAutoLayout: 9db6b30c2008d230da608e62c607b11c23b942e6
+  FXPageControl: 5057bf21537579b40ff30e119cd425d16d8ef90a
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+
+COCOAPODS: 0.35.0
