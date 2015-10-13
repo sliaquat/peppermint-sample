@@ -106,14 +106,18 @@ static NSInteger _rowHeight = 77;
     
     [PMAddressBookPermissionsManager requestionAddressBookPermissionWithGrantedBlock:^{
         
-        if([_searchController.searchBar.text isEqualToString:@""])
-            [self showLoadingContacts];
-        
         if(![[PMPersonRecordFactory sharedInstance] isConstructed]){
-            [[PMPersonRecordFactory sharedInstance] construct];
-            [self.tableView reloadData];
+
+            [self showLoadingContacts];
+            
+            dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+                [[PMPersonRecordFactory sharedInstance] construct];
+                [self performSelectorOnMainThread:@selector(hideLoadingContacts) withObject:nil waitUntilDone:YES];
+            });
+            
+
         }
-        [self performSelector:@selector(hideLoadingContacts) withObject:nil afterDelay:1.0];
+
         
     } deniedBlock:^{
         
@@ -156,6 +160,7 @@ static NSInteger _rowHeight = 77;
         [_loadingContactsVC.view removeFromSuperview];
         [_loadingContactsVC removeFromParentViewController];
         _loadingContactsVC = nil;
+        [self.tableView reloadData];
     }];
 }
 
