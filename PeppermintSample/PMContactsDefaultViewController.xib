@@ -13,12 +13,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PMContactsDefaultViewController">
             <connections>
-                <outlet property="bottomLabelLine1" destination="CyY-mZ-AW3" id="ZAZ-Vv-aQG"/>
-                <outlet property="bottomLabelLine2" destination="GI3-q2-H0G" id="Wjr-A6-HAC"/>
+                <outlet property="bottomLabel" destination="CyY-mZ-AW3" id="6Na-Pv-0l3"/>
                 <outlet property="imageBottomConstraint" destination="73l-GJ-qCc" id="wt2-lD-YPr"/>
                 <outlet property="imageTopConstraint" destination="tYk-g6-UUc" id="sW7-Qe-5EB"/>
                 <outlet property="topLabel" destination="MAl-bY-a4w" id="j4Y-CF-Nm1"/>
-                <outlet property="topLabelHeightConstraint" destination="j7i-LM-BpE" id="aRj-rb-qLU"/>
                 <outlet property="topLabelWidthConstraint" destination="pEG-W8-pHv" id="qxw-65-gEr"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -34,45 +32,26 @@
                         <constraint firstAttribute="width" secondItem="UPg-Gw-a4k" secondAttribute="height" multiplier="1:1" id="Aaa-9U-tCD"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No contacts have been found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAl-bY-a4w">
-                    <rect key="frame" x="209" y="163" width="182" height="62"/>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No contacts have been found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MAl-bY-a4w">
+                    <rect key="frame" x="209" y="165" width="182" height="60"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="62" id="j7i-LM-BpE"/>
                         <constraint firstAttribute="width" constant="182" id="pEG-W8-pHv"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="OpenSans-Semibold" family="Open Sans" pointSize="22"/>
                     <color key="textColor" red="0.5490196078431373" green="0.6588235294117647" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CyY-mZ-AW3">
-                    <rect key="frame" x="121" y="375" width="357" height="20"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CyY-mZ-AW3">
+                    <rect key="frame" x="149" y="375" width="302" height="39"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="20" id="WCM-Bh-q1e"/>
-                        <constraint firstAttribute="width" constant="357" id="kpM-dy-2YQ"/>
+                        <constraint firstAttribute="width" constant="302" id="kpM-dy-2YQ"/>
                     </constraints>
                     <attributedString key="attributedText">
-                        <fragment content="Add some friends to your contact book first">
+                        <fragment content="Add some friends to your contact book first and come back to Peppermint">
                             <attributes>
-                                <color key="NSColor" red="0.54901960780000003" green="0.6588235294" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="NSColor" red="0.5490196078431373" green="0.6588235294117647" blue="0.6470588235294118" alpha="1" colorSpace="calibratedRGB"/>
                                 <font key="NSFont" size="14" name="OpenSans-Semibold"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GI3-q2-H0G">
-                    <rect key="frame" x="179" y="395" width="242" height="20"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="20" id="heo-kP-GoW"/>
-                        <constraint firstAttribute="width" constant="242" id="zNV-KD-rRl"/>
-                    </constraints>
-                    <attributedString key="attributedText">
-                        <fragment content="and com back to Peppermint">
-                            <attributes>
-                                <color key="NSColor" red="0.54901960780000003" green="0.6588235294" blue="0.64705882349999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <font key="NSFont" size="14" name="OpenSans-Semibold"/>
-                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural"/>
                             </attributes>
                         </fragment>
                     </attributedString>
@@ -81,17 +60,17 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="GI3-q2-H0G" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="60O-8R-kjn"/>
+                <constraint firstItem="UPg-Gw-a4k" firstAttribute="width" secondItem="MAl-bY-a4w" secondAttribute="height" multiplier="2:1" id="2Wd-tn-akK"/>
+                <constraint firstItem="UPg-Gw-a4k" firstAttribute="width" secondItem="CyY-mZ-AW3" secondAttribute="height" multiplier="40:13" id="2ng-Du-Tgc"/>
                 <constraint firstItem="CyY-mZ-AW3" firstAttribute="top" secondItem="UPg-Gw-a4k" secondAttribute="bottom" constant="15" id="73l-GJ-qCc"/>
                 <constraint firstItem="UPg-Gw-a4k" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="NS5-YQ-nCa"/>
                 <constraint firstItem="CyY-mZ-AW3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="c0I-wn-sXB"/>
-                <constraint firstItem="GI3-q2-H0G" firstAttribute="top" secondItem="CyY-mZ-AW3" secondAttribute="bottom" id="jZt-eW-A64"/>
                 <constraint firstItem="UPg-Gw-a4k" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mlx-VL-QVH"/>
                 <constraint firstItem="MAl-bY-a4w" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pT0-ty-GuV"/>
                 <constraint firstItem="UPg-Gw-a4k" firstAttribute="top" secondItem="MAl-bY-a4w" secondAttribute="bottom" constant="15" id="tYk-g6-UUc"/>
                 <constraint firstItem="UPg-Gw-a4k" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1:5" id="yct-so-7Gs"/>
             </constraints>
-            <point key="canvasLocation" x="447" y="412"/>
+            <point key="canvasLocation" x="-57" y="370"/>
         </view>
     </objects>
     <resources>
